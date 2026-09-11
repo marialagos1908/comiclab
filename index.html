@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComicLab - Inicio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+    
+    <!-- HEADER -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <span class="text-xl font-black tracking-wider text-indigo-900">COMICLAB</span>
+            </div>
+            <nav class="hidden md:flex items-center space-x-6 font-medium">
+                <a href="index.html" class="text-indigo-600 font-semibold">Inicio</a>
+                <a href="categorias.html" class="text-gray-600 hover:text-indigo-600 transition">Categorías</a>
+                <a href="fondos.html" class="text-gray-600 hover:text-indigo-600 transition">Fondos</a>
+                <a href="personajes.html" class="text-gray-600 hover:text-indigo-600 transition">Diseños de personaje</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <span class="text-gray-600 text-sm hidden lg:inline">+1 555-555-5556</span>
+                <a href="registro.html" class="bg-indigo-600 text-white px-4 py-2 rounded-lg font-medium shadow hover:bg-indigo-700 transition">Contáctanos</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION CON LOS 2 BOTONES DEL VIDEO -->
+    <section class="py-20 bg-slate-600 text-white">
+        <div class="container mx-auto px-6 max-w-5xl flex flex-col md:flex-row items-center justify-between">
+            <div class="max-w-xl">
+                <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Impulse su creatividad</h1>
+                <p class="text-lg text-slate-200 mb-8">Simplificando la creación de comics, proporcionando ideas creativas en ayuda en el ámbito de dibujo comics.</p>
+                
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <!-- Botón 1: Entra sin registrarte -> Te manda a categorias.html -->
+                    <a href="categorias.html" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-6 py-3 rounded-lg shadow-lg text-center transition">Entra sin registrarte</a>
+                    
+                    <!-- Botón 2: Regístrate -> Te manda a registro.html -->
+                    <a href="registro.html" class="bg-indigo-500 hover:bg-indigo-600 text-white font-semibold px-6 py-3 rounded-lg shadow-lg text-center transition">Regístrate</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

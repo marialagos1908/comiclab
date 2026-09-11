@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComicLab - Categorías</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+    
+    <!-- HEADER -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="text-xl font-black tracking-wider text-indigo-900">COMICLAB</span>
+            <nav class="hidden md:flex items-center space-x-6 font-medium">
+                <a href="index.html" class="text-gray-600 hover:text-indigo-600 transition">Inicio</a>
+                <a href="categorias.html" class="text-indigo-600 font-semibold">Categorías</a>
+                <a href="fondos.html" class="text-gray-600 hover:text-indigo-600 transition">Fondos</a>
+                <a href="personajes.html" class="text-gray-600 hover:text-indigo-600 transition">Diseños de personaje</a>
+            </nav>
+            <a href="registro.html" class="bg-indigo-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-indigo-700 transition">Contáctanos</a>
+        </div>
+    </header>
+
+    <!-- SECCIÓN DE CATEGORÍAS (3 BOTONES ORDENADOS COMO EN EL VIDEO) -->
+    <main class="container mx-auto px-6 py-16 text-center bg-slate-800 text-white min-h-[80vh]">
+        <h1 class="text-4xl font-extrabold mb-4">Explora nuestra nueva colección</h1>
+        <p class="text-slate-300 mb-12 max-w-2xl mx-auto">Tous los artículos de nuestra colección están agrupados por categoría para que tu experiencia de navegación sea sencilla. Échales un vistazo y explora los distintos mundos que preparamos para ti.</p>
+        
+        <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            
+            <!-- Tarjeta 1: Fondos de comic -> Va a fondos.html -->
+            <div class="bg-white text-gray-900 rounded-lg shadow-xl p-6 flex flex-col justify-between">
+                <div class="h-48 mb-4 rounded overflow-hidden border">
+            <img src="fondo categoria.jpe" alt=""> alt="Fondos de comic" class="w-full h-full object-cover">
+                </div>
+                <h3 class="text-2xl font-bold mb-4 text-left">Fondos de comic</h3>
+                <a href="fondos.html" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-6 rounded-lg transition inline-block text-left w-max">Entrar</a>
+            </div>
+
+            <!-- Tarjeta 2: Diseño de personaje -> Va a personajes.html -->
+            <div class="bg-white text-gray-900 rounded-lg shadow-xl p-6 flex flex-col justify-between">
+                <div class="h-48 mb-4 rounded overflow-hidden border">
+                   <img src="personajes categoria.jpg" alt="Diseño de personaje"> class="w-full h-full object-cover">
+                </div>
+                <h3 class="text-2xl font-bold mb-4 text-left">Diseño de personaje</h3>
+                <a href="personajes.html" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-6 rounded-lg transition inline-block text-left w-max">Entrar</a>
+            </div>
+
+            <!-- Tarjeta 3: Generador de viñetas -> Va a vinetas.html -->
+            <div class="bg-white text-gray-900 rounded-lg shadow-xl p-6 flex flex-col justify-between">
+                 <div class="h-48 mb-4 rounded overflow-hidden border">
+                <img src="vinetas categoria.jpg" alt=""> alt="Diseño de personaje" class="w-full h-full object-cover">
+                </div>
+                <h3 class="text-2xl font-bold mb-4 text-left">Generador de viñetas</h3>
+                <a href="vinetas.html" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-6 rounded-lg transition inline-block text-left w-max">Entrar</a>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>
